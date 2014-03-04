@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+
+    <link href="site.css" media="all" rel="stylesheet" />
+
+    <title>2D</title>
+</head>
+<body>
+    <h1>2D</h1>
+
+    <div>
+        例：<select id="example">
+            <option value="" selected="selected"></option>
+            <option value="example1">線分：AOJ 1279</option>
+            <option value="example2">多角形：AOJ 2029</option>
+            <option value="example3">点：AOJ 1132</option>
+            <option value="example4">円：AOJ 1183</option>
+            <option value="example5">全図形</option>
+        </select>
+    </div>
+    
+    <div>
+        <textarea id="input_area" rows="10" cols="80"></textarea>
+    </div>
+
+    <div>
+        <button id="generate_btn" onclick="Click()" class="btn">生成</button>
+    </div>
+    
+    <div id="info"></div>
+    <div id="container"></div>
+
+    <div>
+        <h2>注意事項</h2>
+        <ul>
+            <li>ブラウザのズーム機能で表示を縮小していると、ドラッグできる領域がおかしくなります。拡大率１００％での利用を推奨します。</li>
+            <li>図形を拡大しすぎると KineticJS が誤差死して描画されなくなります。</li>
+        </ul>
+    </div>
+
+    <script language="javascript" type="text/javascript" src="./jquery.min.js"> </script>
+    <script language="javascript" type="text/javascript" src="./kinetic-v5.0.1.min.js"></script>
+    <script language="javascript" type="text/javascript" src="./2d.js"></script>
+
+</body>
+</html>

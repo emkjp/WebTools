@@ -1,0 +1,25 @@
+
+body {
+    color: black;
+    line-height: 130% !important;
+    background: #fafafa;
+    height: 100%;
+    padding: 0 0.5em;
+}
+
+h1 {
+    margin : 0.5em;
+}
+
+div#graphviz_svg_div
+{
+    margin:1em 0;
+    display: inline-block;
+    border: 1px solid gray;
+}
+
+div#container{
+    margin:1em 0;
+    display: inline-block;
+    border: 1px solid gray;
+}
