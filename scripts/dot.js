@@ -1,4 +1,9 @@
+var network;
+
 $(function () {
+    var container = document.getElementById('visjs_div');
+    network = new vis.Network(container, {});
+    
     $("#format").change(function () {
         if ($("#format option:selected").val() === "adjacent") {
             $("#connectedCharArea").show();
@@ -17,6 +22,7 @@ $(function () {
     });
     $("input[name=type],input[type=checkbox]").click(ConvertToDot);
     $("#connectedChar").change(ConvertToDot);
+    
 });
 
 function SampleEdge() {
@@ -51,6 +57,13 @@ function UpdateGraphviz() {
     var data = $('#graphviz_data').val();
     var svg = Viz(data, "svg");
     svg_div.html(svg);
+}
+
+var network;
+
+function UpdateVisJs(){
+    network.setData({ dot: $('#graphviz_data').val()});
+    network.redraw();
 }
 
 function ConvertToDot() {
@@ -135,4 +148,6 @@ function ConvertToDot() {
     $('#graphviz_data').val(dottext);
 
     UpdateGraphviz();
+    UpdateVisJs();
 }
+

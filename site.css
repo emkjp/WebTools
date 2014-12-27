@@ -18,6 +18,15 @@ div#graphviz_svg_div
     border: 1px solid gray;
 }
 
+div#visjs_div
+{
+    margin:1em 0;
+    display: inline-block;
+    border: 1px solid gray;
+    width: 500px;
+    height: 500px;
+}
+
 div#container{
     margin:1em 0;
     display: inline-block;
